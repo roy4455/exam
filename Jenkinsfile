@@ -10,11 +10,12 @@ node
         
     }
     
-    stage ('Build')
-    {
-        echo "This is Build"
+    stage ('Build package'){
         
-    }
+        def mvnHome = sh label: '', script: 'mvn clean package'
+        def mvnCMD = "${mvnHome}/bin/mvn"
+        sh label: '', script: '${mvnCMD} clean package'
+        
     
     stage ('Deploy')
     
