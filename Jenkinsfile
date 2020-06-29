@@ -16,6 +16,10 @@ node
         def mvnCMD = "${mvnHome}/bin/mvn"
         sh label: '', script: '${mvnCMD} clean package'
         
+    stage ('Build Docker Image')
+        
+        sh 'docker build -t roy55/myimage:1.0.0 .'
+        
     
     stage ('Deploy')
     
