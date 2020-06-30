@@ -8,5 +8,5 @@ RUN wget http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.23/bin/apache-tomca
 RUN cd /tmp && tar xvzf tomcat.tar.gz
 RUN cp -Rv /tmp/apache-tomcat-8.0.23/* /opt/tomcat/
 EXPOSE 8081
-COPY target/exam-1.0.0.war /opt/tomcat/exam-1.0.0.war
+COPY target/*.war /opt/tomcat/exam-1.0.0.war
 CMD /opt/tomcat/bin/catalina.sh run
