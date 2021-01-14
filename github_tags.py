@@ -6,7 +6,7 @@ import os
 commit_id = sys.argv[1]
 
 # Create github object
-gh_obj = Github(github-token)
+gh_obj = Github(444bd5c5e2ab5c7858c0dbbffe1ba9502045cad9)
 #gh_obj = Github(os.environ['GITHUB_CREDENTIALS_USR'], os.environ['GITHUB_CREDENTIALS_PSW'])
 
 # Get repo
