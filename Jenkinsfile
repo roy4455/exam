@@ -1,5 +1,11 @@
 pipeline {
-   agent any
+   
+   agent {
+        docker {
+            image 'python:3'
+            args '-u root'
+        }
+    }
     stages {
         stage('Create tag') {
 
