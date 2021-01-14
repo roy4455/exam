@@ -2,11 +2,11 @@ from github import Github, GithubException
 import sys
 import os
 
-github_token = sys.argv[2]
+#github_token = sys.argv[2]
 commit_id = sys.argv[1]
 
 # Create github object
-gh_obj = Github(github_token)
+gh_obj = Github(github-token)
 #gh_obj = Github(os.environ['GITHUB_CREDENTIALS_USR'], os.environ['GITHUB_CREDENTIALS_PSW'])
 
 # Get repo
