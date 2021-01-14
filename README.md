@@ -3,7 +3,7 @@
 
 
 
-<h4> Technologies Used </h4>
+<h4> Technnologies Used </h4>
 <ul>
 <li>Java script</li>
 <li>jQuery</li>
