@@ -13,7 +13,6 @@ pipeline {
                 script {
                     def latest_commit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
                     echo "${latest_commit}"
-                    withCredentials([string(credentialsId: 'github-token', variable: 'TOKEN')]) {
                        sh '''
                         
                         python3 -m venv env
