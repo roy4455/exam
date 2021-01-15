@@ -6,6 +6,9 @@ pipeline {
             args '-u root'
         }
     }
+   environment {
+        GITHUB_CREDENTIALS = credentials('github_token')
+   }
     stages {
         stage('Create tag') {
 
