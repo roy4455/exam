@@ -1,5 +1,5 @@
 # exam
-<p> This is a sample app that looks like online exam. </p>
+<p> This is a saple app that looks like online exam. </p>
 
 
 
